@@ -1,0 +1,72 @@
+# depslib dependency file v1.0
+1656159448 source:c:\users\39342\documents\project\project\main.cpp
+	<iostream>
+	"Management.h"
+	<utility>
+
+1656159641 source:c:\users\39342\documents\project\project\src\date.cpp
+	"Date.h"
+	<ctime>
+
+1656144554 c:\users\39342\documents\project\project\include\date.h
+	<iostream>
+	<cctype>
+
+1656144363 source:c:\users\39342\documents\project\project\src\utente.cpp
+	"Utente.h"
+
+1656144381 c:\users\39342\documents\project\project\include\utente.h
+	<iostream>
+	<algorithm>
+	<list>
+	<vector>
+	"Date.h"
+
+1656159553 source:c:\users\39342\documents\project\project\src\azienda.cpp
+	"Azienda.h"
+
+1656144659 c:\users\39342\documents\project\project\include\azienda.h
+	"Utente.h"
+
+1656159683 source:c:\users\39342\documents\project\project\src\gruppo.cpp
+	"Gruppo.h"
+
+1656144787 c:\users\39342\documents\project\project\include\gruppo.h
+	"Utente.h"
+
+1656161153 source:c:\users\39342\documents\project\project\src\logging.cpp
+	"Logging.h"
+
+1656144834 c:\users\39342\documents\project\project\include\logging.h
+	<iostream>
+	<fstream>
+	<string>
+	"GestioneUtenti.hpp"
+	"Date.h"
+
+1656145020 c:\users\39342\documents\project\project\include\gestioneutenti.hpp
+	<iostream>
+	<list>
+	<algorithm>
+	"Semplice.h"
+	"Gruppo.h"
+	"Azienda.h"
+
+1656144874 c:\users\39342\documents\project\project\include\semplice.h
+	"Utente.h"
+	<algorithm>
+
+1656161479 source:c:\users\39342\documents\project\project\src\semplice.cpp
+	"Semplice.h"
+
+1656162169 source:c:\users\39342\documents\project\project\src\management.cpp
+	"Management.h"
+
+1656180886 c:\users\39342\documents\project\project\include\management.h
+	"Logging.h"
+	<fstream>
+	"Date.h"
+	<cctype>
+	<cstdio>
+	<utility>
+

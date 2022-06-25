@@ -1,0 +1,26 @@
+Network.exe: main.o
+	g++  -o Network.exe main.o Management.o Logging.o Date.o Gruppo.o Azienda.o Semplice.o Utente.o
+
+main.o: main.cpp ./src/Management.cpp ./include/Management.h
+	gcc -c main.cpp ./src/Management.cpp  -I./include
+
+Management.o: ./src/Management.cpp ./include/Management.h ./src/Date.cpp ./include/Date.h ./include/Logging.h ./src/Logging.cpp
+	gcc -c ./src/Management.cpp ./src/Date.cpp ./src/Logging.cpp  -I./include
+
+Logging.o: ./src/Logging.cpp ./include/Logging.h ./include/GestioneUtenti.hpp
+	gcc -c ./src/Logging.cpp -I./include
+	
+Date.o: ./src/Date.cpp ./include/Date.h
+	gcc -c ./src/Date.cpp -I./include
+
+Gruppo.o: ./include/Gruppo.h ./src/Gruppo.cpp ./include/Utente.h ./src/Utente.cpp
+	gcc -c ./src/Date.cpp  ./src/Utente.cpp -I./include
+
+Azienda.o: ./include/Azienda.h ./src/Azienda.cpp ./include/Utente.h ./src/Utente.cpp
+	gcc -c ./src/Azienda.cpp  ./src/Utente.cpp -I./include
+
+Semplice.o: ./include/Semplice.h ./src/Semplice.cpp ./include/Utente.h ./src/Utente.cpp
+	gcc -c ./src/Semplice.cpp  ./src/Utente.cpp -I./include
+
+Utente.o: ./include/Utente.h ./src/Utente.cpp
+	gcc -c ./src/Utente.cpp  ./src/Utente.cpp -I./include
