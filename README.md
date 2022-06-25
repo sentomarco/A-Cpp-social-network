@@ -10,7 +10,7 @@ Many checks about the data inserted have to be performed in order to guarantee t
 
 ![immagine](https://user-images.githubusercontent.com/70527145/175788529-07d78abc-e3ac-48e4-99de-e79a98344c1e.png)
  
-<h1> Report: </h1>  
+<h1> Overview: </h1>  
   
 ### [Social Network requirements](https://github.com/sentomarco/A-Cpp-social-network/blob/main/README.md#-social-network-requirements-)
 ### [Social network structure](https://github.com/sentomarco/A-Cpp-social-network/blob/main/README.md#-social-network-structure-)
@@ -114,7 +114,7 @@ Those are all inherited from the class Utente (User), that own the basic methods
   
 **Class Utente:**  
    
-  ![immagine](https://user-images.githubusercontent.com/70527145/175789404-a24c4325-2d01-4b42-b04a-e2f498bbfe9d.png)
+![immagine](https://user-images.githubusercontent.com/70527145/175789930-c64b71d3-228d-4e6f-a4e6-581a51b6e59d.png)
 
     
 As it is possible to see, this class provides many useful set and get methods to:  
@@ -140,7 +140,7 @@ It can also express opinions on someone posts.
 
 **Class Gruppo:**    
    
-   ![immagine](https://user-images.githubusercontent.com/70527145/175789429-2e18474e-414c-49be-b3c9-9e430d5baa20.png)
+![immagine](https://user-images.githubusercontent.com/70527145/175789429-2e18474e-414c-49be-b3c9-9e430d5baa20.png)
    
 Basically it manage the members of a group, naturally each group has its own name.  
   
