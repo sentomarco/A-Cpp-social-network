@@ -1,7 +1,7 @@
 # A-Cpp-social-network
-
-
-** Author: Marco Sento **
+  
+  
+**Author: Marco Sento**
   
 This project consists in the implementation of an offline social network as requirements for the Algorithm Exam at Politecnico di Torino.  
 This is the core of a social network, able to store many different information about the users with the minimum amount of resources, adopting an extensive use of the Standard Template Library in its 4000+ lines of code.  
@@ -15,6 +15,7 @@ Many checks about the data inserted have to be performed in order to guarantee t
   
 The goal is to realize a social network able to satisfy the following requests in the most possible flexible way.  
 It must provide to the user the capability of:  
+```
 1)	View the ID of all the users, for all the types that are:  
 1.1)	 Simple user (semplici): able to have friends, acquaintance, parents, partner, son, jobs and they can be part of some groups.  
 They can also post messages and express like and dislike.  
@@ -66,6 +67,7 @@ They can also post messages and express like and dislike.
 7.3) Search for 'lone wolves', simple users who do not actively participate in social life.  
 7.4) Sort companies by best ratio of positive and negative reactions to their news.  
 7.5) Sort companies by worst ratio of positive and negative reactions to their news.  
+```   
   
 In doing this, continuously checks are performed on the format of the data provided to guarantee their validity.  
 As input, 3 files must be provided, also empty, in order to store and acquire system’s data.  
