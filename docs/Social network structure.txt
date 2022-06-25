@@ -1,1 +1,0 @@
-<h1> Social network structure </h1>
