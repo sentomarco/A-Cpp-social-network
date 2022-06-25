@@ -13,9 +13,10 @@ Many checks about the data inserted have to be performed in order to guarantee t
 <h1> Report: </h1>  
   
 ### Social Network requirements [^1]
-### Social network structure
-  
-<h1> [^1]:Social Network requirements: </h1>  
+### Social network structure [^2]
+
+[^1]:
+<h1> Social Network requirements: </h1>  
   
 The goal is to realize a social network able to satisfy the following requests in the most possible flexible way.  
 It must provide to the user the capability of:  
