@@ -12,7 +12,7 @@ Many checks about the data inserted have to be performed in order to guarantee t
  
 <h1> Report: </h1>  
   
-### Social Network requirements [^1]
+### [Social Network requirements](https://github.com/sentomarco/A-Cpp-social-network/blob/main/README.md#-social-network-requirements-)
 ### [Social network structure](https://github.com/sentomarco/A-Cpp-social-network/blob/main/README.md#-social-network-structure-)
 
 [^1]:
