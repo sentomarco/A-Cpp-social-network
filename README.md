@@ -16,6 +16,7 @@ Many checks about the data inserted have to be performed in order to guarantee t
 The goal is to realize a social network able to satisfy the following requests in the most possible flexible way.  
 It must provide to the user the capability of:  
 ```
+<sub> 
 1)	View the ID of all the users, for all the types that are:  
 1.1)	 Simple user (semplici): able to have friends, acquaintance, parents, partner, son, jobs and they can be part of some groups.  
 They can also post messages and express like and dislike.  
@@ -66,7 +67,8 @@ They can also post messages and express like and dislike.
 7.2) Get family trees of all users  
 7.3) Search for 'lone wolves', simple users who do not actively participate in social life.  
 7.4) Sort companies by best ratio of positive and negative reactions to their news.  
-7.5) Sort companies by worst ratio of positive and negative reactions to their news.  
+7.5) Sort companies by worst ratio of positive and negative reactions to their news. 
+</sub>
 ```   
   
 In doing this, continuously checks are performed on the format of the data provided to guarantee their validity.  
@@ -75,17 +77,23 @@ The name are not relevant as the program is able to identify them on the base of
 The input files are:  
 1)	A user file containing all the users in the system at the startup, provided in the following syntax:  
    
+   ```
 •	<ID>,utente semplice,{data di nascita:<gg-mm-yyyy>,Cognome:<surname>,Nome:<name>,<additional field>:<value>,....}  
 •	<ID>,utente azienda,{Nome:<company name>,<additional field>:<value>,....}  
 •	<ID>,utente gruppo,{Nome:<group name>,<additional field>:<value>,....}  
+  ```
   
 2)	A news file containing all the messages posted by the users, stored with the owner ID, the post time and the number of likes and dislikes, with the IDs of those like or dislike it.  
     
+  ```
 •	<ID>,<message>,data di nascita:<gg-mm-yyyy>,like:{ID1,..},dislike:{ID2,…}    
+  ```
   
 3)	A relations file that express the relationships between two user in the following form:  
   
-•	<ID1>,<ID2>,<relationships>    
+  ```
+•	<ID1>,<ID2>,<relationships>   
+  ```
   
 The reserved character are: { } , :  
 Every user must have a unique ID, composed of an arbitrary sequence of characters.  
