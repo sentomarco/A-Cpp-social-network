@@ -123,7 +123,7 @@ Most of them are overridden in the derived classes.
   
 **Class Semplice:**
     
-    ![immagine](https://user-images.githubusercontent.com/70527145/175789410-b2c80261-1ca1-452c-b31a-1ae171860117.png)
+![immagine](https://user-images.githubusercontent.com/70527145/175789948-608b2fab-1acf-477f-8ad0-a954c79768e8.png)
 
    
 It has many methods in order to manage all the requirement for a simple user.  
@@ -163,7 +163,7 @@ It leverages on the template, no declarations are implemented.
 This is a crucial class.  
 It instantiates and manage the lists of users types as:  
     
-     ![immagine](https://user-images.githubusercontent.com/70527145/175789449-f92df14f-ba93-4746-83bb-ee7a4eb21e5e.png)
+![immagine](https://user-images.githubusercontent.com/70527145/175789986-f3b0f07e-9378-483c-af98-a0aa8464b7bc.png)
 
 The provided methods perform controls after the start up but also at any changes applied to the users.  
 It controls the input files (that can be provided in any order, it has the capability to recognise them by its self), that have to respect the format reported in the previous input constrains.  
