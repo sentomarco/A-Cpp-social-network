@@ -96,4 +96,8 @@ The input files are:
   
 The reserved character are: { } , :  
 Every user must have a unique ID, composed of an arbitrary sequence of characters.  
-All the modifications update these files.  
+All the modifications update these files. 
+  
+  
+  docs/Description.docx
+  
