@@ -8,8 +8,8 @@ This is the core of a social network, able to store many different information a
 The social network is able to manage three different typologies of users, performing almost 30 different operations that spans from users’ management to statistical data analysis.  
 Many checks about the data inserted have to be performed in order to guarantee the integrity of the system.  
 
-![immagine](https://user-images.githubusercontent.com/70527145/175788529-07d78abc-e3ac-48e4-99de-e79a98344c1e.png)
- 
+![immagine](https://user-images.githubusercontent.com/70527145/175790236-ea7a2f06-ca15-4e18-a4a2-5584659e0580.png)  
+  
 <h1> Overview: </h1>  
   
 ### [Social Network requirements](https://github.com/sentomarco/A-Cpp-social-network/blob/main/README.md#-social-network-requirements-)
