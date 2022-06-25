@@ -161,6 +161,7 @@ It leverages on the template, no declarations are implemented.
     
 This is a crucial class.  
 It instantiates and manage the lists of users types as:  
+    
      ![immagine](https://user-images.githubusercontent.com/70527145/175789449-f92df14f-ba93-4746-83bb-ee7a4eb21e5e.png)
 
 The provided methods perform controls after the start up but also at any changes applied to the users.  
