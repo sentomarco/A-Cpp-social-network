@@ -8,7 +8,7 @@ This is the core of a social network, able to store many different information a
 The social network is able to manage three different typologies of users, performing almost 30 different operations that spans from users’ management to statistical data analysis.  
 Many checks about the data inserted have to be performed in order to guarantee the integrity of the system.  
 
-![immagine](https://user-images.githubusercontent.com/70527145/175790236-ea7a2f06-ca15-4e18-a4a2-5584659e0580.png)  
+![immagine](https://user-images.githubusercontent.com/70527145/175790284-126d4dd1-8467-4e4a-8e23-4a2ec29779b6.png)  
   
 <h1> Overview: </h1>  
   
