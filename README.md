@@ -103,78 +103,81 @@ Every user must have a unique ID, composed of an arbitrary sequence of character
 All the modifications update these files. 
     
   
-<h1> Social Network requirements: </h1> 
+<h1> Social Network requirements: </h1>   
    
-Let’s have a bottom-up inspection.  
-The social network can handle three different types of users: Semplice (a simple user, a person), Azienda (an enterprise) and Gruppo (a Groups of users).  
-Those are all inherited from the class Utente (User), that own the basic methods useful for all the other derived classes.  
+Let’s have a bottom-up inspection.    
+The social network can handle three different types of users: Semplice (a simple user, a person), Azienda (an enterprise) and Gruppo (a Groups of users).    
+Those are all inherited from the class Utente (User), that own the basic methods useful for all the other derived classes.   
   
-    ![immagine](https://user-images.githubusercontent.com/70527145/175789333-5fbe3ca0-897e-4b78-a8e4-86d9bde0f9fb.png)
+    ![immagine](https://user-images.githubusercontent.com/70527145/175789333-5fbe3ca0-897e-4b78-a8e4-86d9bde0f9fb.png)  
   
-**Class Utente:**
+**Class Utente:**  
  
-As it is possible to see, this class provides many useful set and get methods to:
-Publish messages related to a specific user, remove it, set like and dislike to the messages of the other users and keep track of the liked or disliked messages and also manages the user’s information.
-Most of them are overridden in the derived classes.
-
+As it is possible to see, this class provides many useful set and get methods to:  
+Publish messages related to a specific user, remove it, set like and dislike to the messages of the other users and keep track of the liked or disliked messages and also manages the user’s information.  
+Most of them are overridden in the derived classes.  
+  
 **Class Semplice:**
- 
-It has many methods in order to manage all the requirement for a simple user.
-It has to handle: friendship relations, parental relations (sons and parents, no more of 2 parents of course), partner relations (no more of one wife or husband), groups membership, work place, like and dislike (Opinions) and many other methos in order to print and remove its information.
-Other methods are the get and sets to provide these functions.
+   
+It has many methods in order to manage all the requirement for a simple user.  
+It has to handle: friendship relations, parental relations (sons and parents, no more of 2 parents of course), partner relations (no more of one wife or husband), groups membership, work place, like and dislike (Opinions) and many other methos in order to print and remove its information.  
+Other methods are the get and sets to provide these functions.  
+  
+Class Azienda:  
+   
+It is quite simpler, it has the capabilities to manage consociates enterprises, employees, track it’s employees and give back the number of employees or consociates the enterprises has.  
+It can also express opinions on someone posts.  
 
-Class Azienda:
+**Class Gruppo:**    
+   
+Basically it manage the members of a group, naturally each group has its own name.  
+  
+**Class GestioneUtenti:**  
+  
  
-It is quite simpler, it has the capabilities to manage consociates enterprises, employees, track it’s employees and give back the number of employees or consociates the enterprises has.
-It can also express opinions on someone posts.
-Class Gruppo:
- 
-Basically it manage the members of a group, naturally each group has its own name.
-
-**Class GestioneUtenti:**
-
- 
-This class offer the possibility to manage all the users belonging to a single type.
-They are organized in a list of users object, but here are NOT instantiated so, all the functions provided are in the form of template.
-It offer the possibility of manage reletions between users, of each type they will be eg. Azienda-Semplice, add and remove users in the list , get the total number of user of the instantiated type and get a particular information of a certain user.
-It is interesting to notice that different functions uses the parent class Utente, in order to offer the possibility to apply a cast to the inherited classes.
-It leverages on the template, no declarations are implemented.
-
-**Class Logging:**
- 
-This is a crucial class.
-It instantiates and manage the lists of users types as:
- 
-The provided methods perform controls after the start up but also at any changes applied to the users.
-It controls the input files (that can be provided in any order, it has the capability to recognise them by its self), that have to respect the format reported in the previous input constrains.
-If empty, the file are filled at run time.
-It check at the start-up and at each changes if the number of parents are correct, if the information provided for each user are meaningful (there are some mandatory information and other optional inserted by the user without number limitation) and every user must have a unique ID, composed of an arbitrary sequence of characters.
-It checks also if some anomalies occur, like having a parents younger of its son or two legal partners.
-
-**Class Management:**
-This is a huge class, It is the control centre of the social network, for sure it should be divided into at least two subclasses for simplicity. 
-Its first application is to provide an interface for the user, presenting to him the various menus and printing the results of its choices.
-As a second scope, to be brief, it manage at higher level all the specification provided in the introduction; it execute all the user requests.
-It deeply exploits the standard template library and the mutability concept, allowing the reuse of its functions for different parameters.
- 
-
-One very peculiar focus should be intended to the “genealogicalTree” function.
-As the name suggest it is able to provide the genealogical tree of a user, iterating recursively on the users relatives it provide the complete tree from the further ancestors to the descendants.
-This project is for a C++ only course and no GUI is provided but the genealogical tree is provided in a csv file for each request.
-It is also notable that if a tree is already printed, the tree of a relative in the same tree won’t be printed, as it would be a copy.
-The csv output involves a fancy algorithm in order to print the further ancestors at the begin (with some infos) and then going down to the descendants. Notice that the siblings are on the same level.
-In absence of information about a relative “???” are inserted.
- 
-**Class Date:**
- 
-This class provide the capability to verify the validity of a date, compare two date and define which is newer and which older, to provide the ability to make a wide range of assumptions and controls in the system.
-A huge flexibility characterizes also this class, as a date can use every type of separator as wanted indeed both 11/01/2000 and 11-01-2000 are both valid.
-Main.cpp:
-For completeness the main is reported.
- 
-
- **Makefile:**
-
+This class offer the possibility to manage all the users belonging to a single type.  
+They are organized in a list of users object, but here are NOT instantiated so, all the functions provided are in the form of template.  
+It offer the possibility of manage reletions between users, of each type they will be eg. Azienda-Semplice, add and remove users in the list , get the total number of user of the instantiated type and get a particular information of a certain user.  
+It is interesting to notice that different functions uses the parent class Utente, in order to offer the possibility to apply a cast to the inherited classes.  
+It leverages on the template, no declarations are implemented.  
+  
+**Class Logging:**  
+   
+This is a crucial class.  
+It instantiates and manage the lists of users types as:  
+   
+The provided methods perform controls after the start up but also at any changes applied to the users.  
+It controls the input files (that can be provided in any order, it has the capability to recognise them by its self), that have to respect the format reported in the previous input constrains.  
+If empty, the file are filled at run time.  
+It check at the start-up and at each changes if the number of parents are correct, if the information provided for each user are meaningful (there are some mandatory information and other optional inserted by the user without number limitation) and every user must have a unique ID, composed of an arbitrary sequence of characters.  
+It checks also if some anomalies occur, like having a parents younger of its son or two legal partners.  
+  
+**Class Management:**  
+This is a huge class, It is the control centre of the social network, for sure it should be divided into at least two subclasses for simplicity.   
+Its first application is to provide an interface for the user, presenting to him the various menus and printing the results of its choices.  
+As a second scope, to be brief, it manage at higher level all the specification provided in the introduction; it execute all the user requests.  
+It deeply exploits the standard template library and the mutability concept, allowing the reuse of its functions for different parameters.  
+   
+  
+One very peculiar focus should be intended to the “genealogicalTree” function.  
+As the name suggest it is able to provide the genealogical tree of a user, iterating recursively on the users relatives it provide the complete tree from the further ancestors to the descendants.  
+This project is for a C++ only course and no GUI is provided but the genealogical tree is provided in a csv file for each request.  
+It is also notable that if a tree is already printed, the tree of a relative in the same tree won’t be printed, as it would be a copy.  
+The csv output involves a fancy algorithm in order to print the further ancestors at the begin (with some infos) and then going down to the descendants. Notice that the siblings are on the same level.  
+In absence of information about a relative “???” are inserted.  
+   
+**Class Date:**  
+   
+This class provide the capability to verify the validity of a date, compare two date and define which is newer and which older, to provide the ability to make a wide range of assumptions and controls in the system.  
+A huge flexibility characterizes also this class, as a date can use every type of separator as wanted indeed both 11/01/2000 and 11-01-2000 are both valid.  
+    
+**Main.cpp:**    
+    
+For completeness the main is reported.  
+   
+  
+ **Makefile:**  
+  
  
 
 
