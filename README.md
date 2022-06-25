@@ -109,13 +109,13 @@ All the modifications update these files.
 Let’s have a bottom-up inspection.    
 The social network can handle three different types of users: Semplice (a simple user, a person), Azienda (an enterprise) and Gruppo (a Groups of users).    
 Those are all inherited from the class Utente (User), that own the basic methods useful for all the other derived classes.   
-  
-    ![immagine](https://user-images.githubusercontent.com/70527145/175789333-5fbe3ca0-897e-4b78-a8e4-86d9bde0f9fb.png)  
+
+![immagine](https://user-images.githubusercontent.com/70527145/175790517-6b530ab9-2ea8-4b49-b388-28317be4a64e.png)  
+
   
 **Class Utente:**  
    
-![immagine](https://user-images.githubusercontent.com/70527145/175789930-c64b71d3-228d-4e6f-a4e6-581a51b6e59d.png)
-
+![immagine](https://user-images.githubusercontent.com/70527145/175790492-362b493e-313e-4e81-adbf-f3d6ede8e19d.png)
     
 As it is possible to see, this class provides many useful set and get methods to:  
 Publish messages related to a specific user, remove it, set like and dislike to the messages of the other users and keep track of the liked or disliked messages and also manages the user’s information.  
