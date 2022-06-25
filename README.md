@@ -192,7 +192,7 @@ In absence of information about a relative “???” are inserted.
    
 **Class Date:**  
    
-    ![immagine](https://user-images.githubusercontent.com/70527145/175789461-359dabe2-b50c-4520-bcbb-7deaa99a01d3.png)
+![immagine](https://user-images.githubusercontent.com/70527145/175789502-5cdbf86f-f7a2-41c3-9df1-a0113406e890.png)
 
     
 This class provide the capability to verify the validity of a date, compare two date and define which is newer and which older, to provide the ability to make a wide range of assumptions and controls in the system.  
@@ -200,7 +200,7 @@ A huge flexibility characterizes also this class, as a date can use every type o
     
 **Main.cpp:**  
   
-    ![immagine](https://user-images.githubusercontent.com/70527145/175789463-a78a766f-f213-4809-8d2f-53b853c729d5.png)
+![immagine](https://user-images.githubusercontent.com/70527145/175789496-8a35e8a4-6f63-49e4-91fe-353e4501f434.png)
       
 For completeness the main and the Makefile are reported.  
      
