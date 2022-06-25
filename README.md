@@ -1,4 +1,4 @@
-# A-Cpp-social-network
+# A C++ social network
   
   
 **Author: Marco Sento**
