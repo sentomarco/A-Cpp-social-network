@@ -99,5 +99,5 @@ Every user must have a unique ID, composed of an arbitrary sequence of character
 All the modifications update these files. 
   
   
-(docs/SocialNetworkStructure.md)
+[link](docs/SocialNetworkStructure.md)
   
