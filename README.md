@@ -171,7 +171,7 @@ It checks also if some anomalies occur, like having a parents younger of its son
   
 **Class Management:**  
     
-    ![immagine](https://user-images.githubusercontent.com/70527145/175789456-44679b5b-93ac-4d43-a613-bc8251c22c0a.png)
+![immagine](https://user-images.githubusercontent.com/70527145/175789510-3c9ffe4c-dab4-49d4-bf61-75b4506ebc88.png)
 
     
 This is a huge class, It is the control centre of the social network, for sure it should be divided into at least two subclasses for simplicity.   
