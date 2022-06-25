@@ -112,29 +112,42 @@ Those are all inherited from the class Utente (User), that own the basic methods
     ![immagine](https://user-images.githubusercontent.com/70527145/175789333-5fbe3ca0-897e-4b78-a8e4-86d9bde0f9fb.png)  
   
 **Class Utente:**  
- 
+   
+  ![immagine](https://user-images.githubusercontent.com/70527145/175789404-a24c4325-2d01-4b42-b04a-e2f498bbfe9d.png)
+
+    
 As it is possible to see, this class provides many useful set and get methods to:  
 Publish messages related to a specific user, remove it, set like and dislike to the messages of the other users and keep track of the liked or disliked messages and also manages the user’s information.  
 Most of them are overridden in the derived classes.  
   
 **Class Semplice:**
+    
+    ![immagine](https://user-images.githubusercontent.com/70527145/175789410-b2c80261-1ca1-452c-b31a-1ae171860117.png)
+
    
 It has many methods in order to manage all the requirement for a simple user.  
 It has to handle: friendship relations, parental relations (sons and parents, no more of 2 parents of course), partner relations (no more of one wife or husband), groups membership, work place, like and dislike (Opinions) and many other methos in order to print and remove its information.  
 Other methods are the get and sets to provide these functions.  
   
-Class Azienda:  
+**Class Azienda:**  
    
+  ![immagine](https://user-images.githubusercontent.com/70527145/175789424-f1048fd3-3471-4f2b-b459-f4707e185bf2.png)
+   
+  
 It is quite simpler, it has the capabilities to manage consociates enterprises, employees, track it’s employees and give back the number of employees or consociates the enterprises has.  
 It can also express opinions on someone posts.  
 
 **Class Gruppo:**    
    
+   ![immagine](https://user-images.githubusercontent.com/70527145/175789429-2e18474e-414c-49be-b3c9-9e430d5baa20.png)
+   
 Basically it manage the members of a group, naturally each group has its own name.  
   
 **Class GestioneUtenti:**  
   
- 
+   ![immagine](https://user-images.githubusercontent.com/70527145/175789434-962c24d9-5870-4f0d-a6c3-ab37e92b26f0.png)
+
+    
 This class offer the possibility to manage all the users belonging to a single type.  
 They are organized in a list of users object, but here are NOT instantiated so, all the functions provided are in the form of template.  
 It offer the possibility of manage reletions between users, of each type they will be eg. Azienda-Semplice, add and remove users in the list , get the total number of user of the instantiated type and get a particular information of a certain user.  
@@ -143,9 +156,13 @@ It leverages on the template, no declarations are implemented.
   
 **Class Logging:**  
    
+  ![immagine](https://user-images.githubusercontent.com/70527145/175789445-aec9c464-aecb-4815-920e-1bb455f855f8.png)
+
+    
 This is a crucial class.  
 It instantiates and manage the lists of users types as:  
-   
+     ![immagine](https://user-images.githubusercontent.com/70527145/175789449-f92df14f-ba93-4746-83bb-ee7a4eb21e5e.png)
+
 The provided methods perform controls after the start up but also at any changes applied to the users.  
 It controls the input files (that can be provided in any order, it has the capability to recognise them by its self), that have to respect the format reported in the previous input constrains.  
 If empty, the file are filled at run time.  
@@ -153,6 +170,10 @@ It check at the start-up and at each changes if the number of parents are correc
 It checks also if some anomalies occur, like having a parents younger of its son or two legal partners.  
   
 **Class Management:**  
+    
+    ![immagine](https://user-images.githubusercontent.com/70527145/175789456-44679b5b-93ac-4d43-a613-bc8251c22c0a.png)
+
+    
 This is a huge class, It is the control centre of the social network, for sure it should be divided into at least two subclasses for simplicity.   
 Its first application is to provide an interface for the user, presenting to him the various menus and printing the results of its choices.  
 As a second scope, to be brief, it manage at higher level all the specification provided in the introduction; it execute all the user requests.  
@@ -165,18 +186,28 @@ This project is for a C++ only course and no GUI is provided but the genealogica
 It is also notable that if a tree is already printed, the tree of a relative in the same tree won’t be printed, as it would be a copy.  
 The csv output involves a fancy algorithm in order to print the further ancestors at the begin (with some infos) and then going down to the descendants. Notice that the siblings are on the same level.  
 In absence of information about a relative “???” are inserted.  
+    
+  ![immagine](https://user-images.githubusercontent.com/70527145/175789459-b5db0c74-b911-46f0-8d64-954d7b874920.png)
+  
    
 **Class Date:**  
    
+    ![immagine](https://user-images.githubusercontent.com/70527145/175789461-359dabe2-b50c-4520-bcbb-7deaa99a01d3.png)
+
+    
 This class provide the capability to verify the validity of a date, compare two date and define which is newer and which older, to provide the ability to make a wide range of assumptions and controls in the system.  
 A huge flexibility characterizes also this class, as a date can use every type of separator as wanted indeed both 11/01/2000 and 11-01-2000 are both valid.  
     
-**Main.cpp:**    
-    
-For completeness the main is reported.  
-   
+**Main.cpp:**  
   
+    ![immagine](https://user-images.githubusercontent.com/70527145/175789463-a78a766f-f213-4809-8d2f-53b853c729d5.png)
+      
+For completeness the main and the Makefile are reported.  
+     
+
  **Makefile:**  
+    ![immagine](https://user-images.githubusercontent.com/70527145/175789474-9d402ed5-ab61-4e38-8ec5-621b68e3a1f4.png)
+
   
  
 
