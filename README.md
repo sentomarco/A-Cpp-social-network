@@ -12,10 +12,10 @@ Many checks about the data inserted have to be performed in order to guarantee t
  
 <h1> Report: </h1>  
   
-### Social Network requirements [1]
-### Social network structure: [2]
+### Social Network requirements [^1]
+### Social network structure: [^2]
   
-[1] <h1> Social Network requirements: </h1>  
+[^1] <h1> Social Network requirements: </h1>  
   
 The goal is to realize a social network able to satisfy the following requests in the most possible flexible way.  
 It must provide to the user the capability of:  
@@ -103,7 +103,7 @@ Every user must have a unique ID, composed of an arbitrary sequence of character
 All the modifications update these files. 
     
   
-<h1> [2]: Social Network requirements: </h1>   
+<h1> [^2]: Social Network requirements: </h1>   
    
 Let’s have a bottom-up inspection.    
 The social network can handle three different types of users: Semplice (a simple user, a person), Azienda (an enterprise) and Gruppo (a Groups of users).    
