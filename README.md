@@ -2,7 +2,7 @@
 
 ## Abcdef 
 
-<h1> Author: Marco Sento <\h1>
+<h1> Author: Marco Sento </h1>
 
 This project consists in the implementation of an offline social network as requirements for the Algorithm Exam at Politecnico di Torino.
 This is the core of a social network, able to store many different information about the users with the minimum amount of resources, adopting an extensive use of the Standard Template Library in its 4000+ lines of code.
