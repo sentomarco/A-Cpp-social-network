@@ -10,12 +10,12 @@ Many checks about the data inserted have to be performed in order to guarantee t
 
 ![immagine](https://user-images.githubusercontent.com/70527145/175788529-07d78abc-e3ac-48e4-99de-e79a98344c1e.png)
  
-## Report:
-### Social Network requirements
-
-### Social network structure:
+<h1> Report: </h1>  
   
-<h1> Social Network requirements: </h1>  
+### Social Network requirements [1]
+### Social network structure: [2]
+  
+[1] <h1> Social Network requirements: </h1>  
   
 The goal is to realize a social network able to satisfy the following requests in the most possible flexible way.  
 It must provide to the user the capability of:  
