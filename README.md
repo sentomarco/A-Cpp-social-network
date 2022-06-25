@@ -9,7 +9,10 @@ The social network is able to manage three different typologies of users, perfor
 Many checks about the data inserted have to be performed in order to guarantee the integrity of the system.  
 
 ![immagine](https://user-images.githubusercontent.com/70527145/175788529-07d78abc-e3ac-48e4-99de-e79a98344c1e.png)
-  
+ 
+## 1) Social Network requirements
+
+## 2) Social network structure:
   
 <h1> Social Network requirements: </h1>  
   
@@ -97,7 +100,6 @@ The input files are:
 The reserved character are: { } , :  
 Every user must have a unique ID, composed of an arbitrary sequence of characters.  
 All the modifications update these files. 
+    
   
-  
-[link](docs/SocialNetworkStructure.md)
-  
+<h1> Social Network requirements: </h1> 
