@@ -24,7 +24,7 @@ It must provide to the user the capability of:
 ```
 1)	View the ID of all the users, for all the types that are:  
     1.1)	 Simple user (semplici): able to have friends, acquaintance, parents, partner, son, jobs and they can be part of some groups.  
-            They can also post messages and express like and dislike.  
+                They can also post messages and express like and dislike.  
     1.2)	 Enterprise user (azienda): able to have employees and corporates, can also post messages and express like and dislike.  
     1.3)	 Group user (gruppi): able to have subscribers.  
   
