@@ -3,7 +3,7 @@
   
 **Author: Marco Sento**
   
-This project consists in the implementation of an offline social network as requirements for the Algorithm Exam at Politecnico di Torino.  
+This was my first c++ project, it consists in the implementation of an offline social network as requirements for the Algorithm Exam at Politecnico di Torino.  
 This is the core of a social network, able to store many different information about the users with the minimum amount of resources, adopting an extensive use of the Standard Template Library in its 4000+ lines of code.  
 The social network is able to manage three different typologies of users, performing almost 30 different operations that spans from users’ management to statistical data analysis.  
 Many checks about the data inserted have to be performed in order to guarantee the integrity of the system.  
@@ -24,7 +24,7 @@ It must provide to the user the capability of:
 ```
 1)	View the ID of all the users, for all the types that are:  
 1.1)	 Simple user (semplici): able to have friends, acquaintance, parents, partner, son, jobs and they can be part of some groups.  
-They can also post messages and express like and dislike.  
+       They can also post messages and express like and dislike.  
 1.2)	 Enterprise user (azienda): able to have employees and corporates, can also post messages and express like and dislike.  
 1.3)	 Group user (gruppi): able to have subscribers.  
   
@@ -176,7 +176,7 @@ It checks also if some anomalies occur, like having a parents younger of its son
 ![immagine](https://user-images.githubusercontent.com/70527145/175789510-3c9ffe4c-dab4-49d4-bf61-75b4506ebc88.png)
 
     
-This is a huge class, It is the control centre of the social network, for sure it should be divided into at least two subclasses for simplicity.   
+This is a huge class, It is the control centre of the social network, for sure it should be divided into more subclasses for simplicity.   
 Its first application is to provide an interface for the user, presenting to him the various menus and printing the results of its choices.  
 As a second scope, to be brief, it manage at higher level all the specification provided in the introduction; it execute all the user requests.  
 It deeply exploits the standard template library and the mutability concept, allowing the reuse of its functions for different parameters.  
